@@ -1006,32 +1006,6 @@
 
     <script>
 
-        setTimeout(function () {
-            $('.loading').fadeOut();
-        }, 1500);
-
-        var swiper = new Swiper(".video", {
-            slidesPerView: 2,
-            centeredSlides: true,
-            spaceBetween: 24,
-            loop: true,
-            mousewheel: true,
-        });
-
-        var swiper = new Swiper(".web", {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-
 
         $('header div:nth-child(3)').click(function () {
             $('.profile').addClass('on');
@@ -1115,6 +1089,32 @@
             $(this).removeClass('on');
 
             $('.graphic .list_in .more').removeClass('on');
+        });
+
+        setTimeout(function () {
+            $('.loading').fadeOut();
+        }, 1500);
+
+        var swiper = new Swiper(".video", {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 24,
+            loop: true,
+            mousewheel: true,
+        });
+
+        var swiper = new Swiper(".web", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
 
     </script>
